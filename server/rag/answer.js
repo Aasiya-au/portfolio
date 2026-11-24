@@ -1,6 +1,6 @@
 // STEP 5: generation. The model only sees the retrieved passages and is told to stay inside them.
 import { embedQuery } from './embed.js';
-import { getIndex, search } from './store.js';
+import { ensureIndex, search } from './store.js';
 import { geminiPost } from './gemini.js';
 import { getProfileName } from './chunk.js';
 
@@ -48,9 +48,11 @@ async function generate(userText) {
 }
 
 export async function answer({ message, history = [] }) {
-  if (!getIndex()) {
-    const e = new Error('The chatbot index is not ready yet.');
-    e.status = 503;
+  try {
+    await ensureIndex();
+  } catch (err) {
+    const e = new Error(`Index could not be built: ${err.message}`);
+    e.status = err.status === 500 ? 500 : 503; // 500 = config problem (e.g. missing key), not "waking up"
     throw e;
   }
   if (GREETING.test(message.trim())) {

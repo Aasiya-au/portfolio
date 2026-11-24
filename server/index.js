@@ -4,7 +4,7 @@ import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import rateLimit from 'express-rate-limit';
-import { loadIndex, getIndex } from './rag/store.js';
+import { ensureIndex, getIndex, lastIndexError } from './rag/store.js';
 import { answer } from './rag/answer.js';
 import { validateContact } from './validate.js';
 import { sendContact } from './mailer.js';
@@ -32,7 +32,7 @@ const safeEqual = (a, b) => {
 // ---------- health ----------
 app.get('/api/health', (_req, res) => {
   const idx = getIndex();
-  res.json({ ok: !!idx, chunks: idx?.chunks.length ?? 0, model: process.env.CHAT_MODEL || 'gemini-3.8-flash' });
+  res.json({ ok: !!idx, error: idx ? undefined : lastIndexError, chunks: idx?.chunks.length ?? 0, model: process.env.CHAT_MODEL || 'gemini-3.8-flash' });
 });
 
 // ---------- chatbot ----------
@@ -89,6 +89,6 @@ app.get('/api/stats', (req, res) => {
 const port = Number(process.env.PORT || 3001);
 app.listen(port, () => console.log(`API listening on http://localhost:${port}`));
 
-loadIndex()
+ensureIndex()
   .then((idx) => console.log(`Chatbot ready: ${idx.chunks.length} chunks indexed.`))
   .catch((err) => console.error('Chatbot index NOT ready:', err.message));

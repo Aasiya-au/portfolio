@@ -10,6 +10,24 @@ const INDEX_PATH = path.join(path.dirname(fileURLToPath(import.meta.url)), 'inde
 let index = null;
 export const getIndex = () => index;
 
+// Retry-safe loader: if the startup build failed (bad key, network blip), the next chat
+// request tries again instead of staying broken until the server restarts.
+let loading = null;
+export let lastIndexError = null;
+export function ensureIndex() {
+  if (index) return Promise.resolve(index);
+  if (!loading) {
+    loading = loadIndex()
+      .then((i) => ((lastIndexError = null), i))
+      .catch((e) => {
+        lastIndexError = e.message;
+        throw e;
+      })
+      .finally(() => (loading = null));
+  }
+  return loading;
+}
+
 // Rebuilds only when content changed (hash of all chunk text), so restarts are free.
 export async function loadIndex({ force = false } = {}) {
   const chunks = buildChunks();
