@@ -14,7 +14,7 @@ const app = express();
 app.disable('x-powered-by');
 if (process.env.TRUST_PROXY) app.set('trust proxy', Number(process.env.TRUST_PROXY));
 app.use(helmet());
-app.use(cors({ origin: (process.env.ALLOWED_ORIGIN || 'http://localhost:5173').split(','), methods: ['GET', 'POST'] }));
+app.use(cors({ origin: (process.env.ALLOWED_ORIGIN || 'http://localhost:5173').split(','), methods: ['GET', 'POST'], credentials: true }));
 app.use(express.json({ limit: '8kb' }));
 
 const limiter = (limit, windowMs, error) =>
