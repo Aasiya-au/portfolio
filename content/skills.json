@@ -1,0 +1,9 @@
+{
+  "programming_languages": ["C/C++", "C#", "Python"],
+  "game_engines": ["Unity (2D & 3D)", "Unreal Engine"],
+  "libraries_and_frameworks": ["SDL2", "PyQt5", "Three.js"],
+  "art_and_animation": ["Blender", "Adobe After Effects", "Sketching"],
+  "databases": ["MySQL", "Database Design and Management"],
+  "tools": ["Visual Studio", "Git", "Microsoft Office Suite"],
+  "core_strengths": ["Gameplay Programming", "Object-Oriented Programming", "Basic Physics Programming"]
+}

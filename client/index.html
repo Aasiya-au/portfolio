@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip" href="#overlay">Skip to content</a>
+    <div id="loader" aria-live="polite">
+      <p>Sharpening pencils...</p>
+      <div class="bar"><span id="bar-fill"></span></div>
+    </div>
+
+    <canvas id="bg" aria-hidden="true"></canvas>
+    <div id="vignette" aria-hidden="true"></div>
+
+    <nav id="nav" aria-label="Sections">
+      <ul>
+        <li><a href="#home"><span>Home</span></a></li>
+        <li><a href="#about"><span>About</span></a></li>
+        <li><a href="#skills"><span>Skills</span></a></li>
+        <li><a href="#projects"><span>Projects</span></a></li>
+        <li><a href="#animation"><span>Animation</span></a></li>
+        <li><a href="#credits"><span>Education</span></a></li>
+        <li><a href="#contact"><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+    <main id="overlay" tabindex="-1">
+      <section id="home" aria-label="Home" class="scene" data-theme="anime" data-content="left">
+        <div class="card">
+          <p class="episode">Episode 1: Hello, world!</p>
+          <h1 id="name">Your Name</h1>
+          <p id="tagline" class="lede">Tagline</p>
+          <ul class="stickers">
+            <li>Game dev</li>
+            <li>Animation</li>
+            <li>Sketching</li>
+          </ul>
+        </div>
+        <p class="hint">Move your mouse. She's watching.</p>
+      </section>
+
+      <section id="about" aria-label="About me" class="scene" data-theme="sketch" data-content="right">
+        <div class="card">
+          <h2>About me</h2>
+          <div class="mount" id="about-mount"></div>
+        </div>
+      </section>
+
+      <section id="skills" aria-label="Skills" class="scene" data-theme="manhwa" data-content="left">
+        <div class="card">
+          <h2>Skills</h2>
+          <div class="mount" id="skills-mount"></div>
+        </div>
+      </section>
+
+      <section id="projects" aria-label="Projects" class="scene" data-theme="arcade" data-content="wide">
+        <div class="card">
+          <h2>Projects</h2>
+          <div class="mount" id="projects-mount"></div>
+        </div>
+      </section>
+
+      <section id="animation" aria-label="Animation" class="scene" data-theme="glam" data-content="right">
+        <div class="card">
+          <h2>Animation</h2>
+          <div class="mount" id="animation-mount"></div>
+        </div>
+      </section>
+
+      <section id="credits" aria-label="Education and awards" class="scene" data-theme="credits" data-content="center">
+        <div class="card">
+          <h2>Education and awards</h2>
+          <div class="mount" id="credits-mount"></div>
+        </div>
+      </section>
+
+      <section id="contact" aria-label="Contact" class="scene" data-theme="cafe" data-content="left">
+        <div class="card">
+          <h2>Contact</h2>
+          <div class="mount" id="contact-mount"></div>
+        </div>
+      </section>
+    </main>
+
+    <noscript><p class="noscript">This portfolio uses JavaScript for its 3D scene and content. Please enable it, or email me directly.</p></noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

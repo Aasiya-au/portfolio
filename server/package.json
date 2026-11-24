@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "build-index": "node rag/build-index.js",
+    "test-questions": "node rag/test-questions.js",
+    "test-email": "node test-email.js",
+    "test-validate": "node validate.test.js"
+  },
+  "dependencies": {
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "express-rate-limit": "latest",
+    "helmet": "latest",
+    "nodemailer": "latest"
+  }
+}

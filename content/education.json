@@ -1,0 +1,52 @@
+{
+  "education": [
+    {
+      "degree": "BSCS with specialisation in Gaming and Animation",
+      "institution": "NED University",
+      "dates": "2023 - Present",
+      "cgpa": "3.80"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Game jam and exhibition participant",
+      "org": "Global Game Jam 2026 (CEGA-Karachi), GameCon'25 (NED), Game Projects Exhibitions",
+      "dates": "2025 - 2026",
+      "notes": "Built and presented games in team and competition settings."
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Top 5 projects, Game Projects Exhibition",
+      "project": "The Seeds",
+      "date": "May 2026"
+    },
+    {
+      "title": "2nd position, Global Game Jam 2026 (CEGA-Karachi)",
+      "project": "Masketeer",
+      "date": "Feb 2026"
+    },
+    {
+      "title": "4th position, Game Projects Exhibition",
+      "project": "Veil of Secrets",
+      "date": "Nov 2025"
+    }
+  ],
+  "courses": [
+    {
+      "title": "After Effects course",
+      "institution": "CEGA",
+      "notes": "Produced a lipstick commercial as my first After Effects project."
+    },
+        {
+      "title": "Pre-Production course",
+      "institution": "CEGA",
+      "notes": "Learned writing for games and storyboarding."
+    },
+        {
+      "title": "Unreal Engine course",
+      "institution": "CEGA",
+      "notes": "Developed The Seeds and modeled my first character."
+    }
+  ]
+}

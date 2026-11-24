@@ -1,0 +1,49 @@
+Report created: 
+	7/1/2026	5:52:08 PM
+
+Project name: assignment.aep
+
+Source files collected to: 
+	C:\Users\postp-k-03\Downloads\assignment 1 folder
+
+Source files collected: For all comps
+
+Collected comps:  
+	Comp 1
+	ellipse with arrow
+	
+Number of collected files:  9
+
+Size of collected files:  7.5 MB
+
+Collected source files: 
+	C:\Users\postp-k-03\Downloads\0.png
+	C:\Users\postp-k-03\Downloads\arrow.png
+	C:\Users\postp-k-03\Downloads\beakybounce.png
+	C:\Users\postp-k-03\Downloads\crimsonbastion.png
+	C:\Users\postp-k-03\Downloads\drive.jpg
+	C:\Users\postp-k-03\Downloads\flower.webp
+	C:\Users\postp-k-03\Downloads\masketeer.png
+	C:\Users\postp-k-03\Downloads\maze.png
+	C:\Users\postp-k-03\Downloads\vos.png
+	
+Rendering plug-ins:
+	Classic 3D
+	
+Effects used:  5
+
+Effect:  Drop Shadow
+	
+Effect:  Echo
+	
+Effect:  Glow
+	
+Effect:  Grid
+	
+Effect:  Tint
+	
+
+Layer:  Text Layer
+	External dependencies:  
+		Font family: “Ink Free”, Font style: “Regular”
+
