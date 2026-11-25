@@ -58,7 +58,7 @@ function renderSkills() {
 }
 
 // ---------- Projects ----------
-const CATS = [['all', 'All'], ['game', 'Games'], ['animation', 'Animation'], ['software', 'Software']];
+const CATS = [['all', 'All'], ['game', 'Games'], ['animation', 'Animation'], ['software', 'Software'], ['interactive', 'Interactive Scene']];
 const state = { cat: 'all', q: '', sort: 'newest' };
 const startTs = (p) => {
   const m = String(p.dates || '').match(/([A-Za-z]{3})[a-z]*\s+(\d{4})/);

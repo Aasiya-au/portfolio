@@ -1,20 +1,20 @@
 [
   {
-    "id": "vr-games-hub",
-    "title": "VR Games Hub",
-    "category": "game",
+    "id": "vr-movie-scene",
+    "title": "VR Movie Scene",
+    "category": "interactive",
     "dates": "Mar 2026 - May 2026",
     "tools": [
       "Unity",
       "VR",
       "URP"
     ],
-    "description": "A VR project featuring a 3D city environment and multiple mini-games developed in Unity. My contributions focused on the main environment layout, VR integration, and a mini-golf mini-game.",
+    "description": "A VR project featuring the wardrobe scene from 'The Chronicles of Narnia: The Lion, the Witch and the Wradrobe.'",
     "achievement": null,
     "media": {
-      "cover": "",
+      "cover": "narnia_scene.png",
       "images": [],
-      "video": "",
+      "video": "Narnia_Scene.mp4",
       "video_url": ""
     },
     "badge": "",
@@ -32,9 +32,9 @@
     "description": "An environment-friendly maze game about gathering water and seeds to grow plants and clear a foggy map. Players use hiding spots and a gun to survive robot enemies that try to destroy the crops.",
     "achievement": "Top 5 projects at the Game Projects Exhibition (May 2026)",
     "media": {
-      "cover": "",
-      "images": [],
-      "video": "",
+      "cover": "the_seeds_cover.png",
+      "images": ["the_seeds.png", "the_seeds_2.png"],
+      "video": "The_Seeds_Video.mp4",
       "video_url": ""
     },
     "badge": "Top 5",
@@ -75,10 +75,10 @@
     "description": "A 3D horror escape room game with puzzle mechanics, object interaction, an inventory system, NPC dialogues, health logic, lighting and VFX, and win/lose states.",
     "achievement": "4th place at the departmental Game Projects Exhibition",
     "media": {
-      "cover": "",
-      "images": [],
+      "cover": "vos_cover.png",
+      "images": ["vos.png"],
       "video": "",
-      "video_url": ""
+      "video_url": "https://lnkd.in/p/de-uRnqq"
     },
     "badge": "4th place",
     "mood": "horror",
@@ -96,8 +96,8 @@
     "description": "A 2D sci-fi platformer built for GameCon'25 at NED, with shooting mechanics, timed levels, collectibles, scoring, win/lose states, and integrated BGM/SFX. The Unity project is organized into clear scenes, scripts, prefabs, and assets.",
     "achievement": null,
     "media": {
-      "cover": "",
-      "images": [],
+      "cover": "crimsonbastion.png",
+      "images": ["crimsonbastion.png", "crimsonbastion2.png"],
       "video": "Crimson_Bastion_Video.mp4",
       "aspect": "1/1",
       "video_url": ""
@@ -107,21 +107,41 @@
     "links": []
   },
   {
-    "id": "study-planner",
-    "title": "Study Planner App",
+    "id": "algo-visualiser",
+    "title": "Algorithm & Time Analysis Visualizer",
     "category": "software",
-    "dates": "Feb 2025 - Apr 2025",
+    "dates": "Nov 2025",
     "tools": [
       "Python",
-      "PyQt5",
-      "MySQL"
+      "Tkinter"
     ],
-    "description": "A study planner desktop application with a PyQt5 interface, flashcards for revision, notes, a to-do list, and chatbot functionality through API integration to help with study questions.",
+    "description": "An algorithm & time analysis visualizer that animates how different algorithms work and tracks their performance using real-time graphs.",
     "achievement": null,
     "media": {
-      "cover": "",
+      "cover": "algo_visualiser_cover.png",
       "images": [],
-      "video": "",
+      "video": "algo_visualiser_sorting.mp4",
+      "video_url": ""
+    },
+    "badge": "",
+    "mood": "",
+    "links": []
+  },
+  {
+    "id": "medimate",
+    "title": "MediMate",
+    "category": "software",
+    "dates": "Nov 2026",
+    "tools": [
+      "Python",
+      "Tkinter"
+    ],
+    "description": "MediMate is a friendly symptom checker that lets you tap how you're feeling and then shows the most likely common illness, how serious it might be, and what to do about it.",
+    "achievement": null,
+    "media": {
+      "cover": "medimate_cover.png",
+      "images": ["medimate1.png", "medimate2.png", "medimate3.png"],
+      "video": "MediMate_Video.mp4",
       "video_url": ""
     },
     "badge": "",
@@ -140,10 +160,10 @@
     "description": "My contribution to Tiny Triad, a C++ game suite: a maze mini-game built with data structures and algorithms such as DFS and hashing, featuring real-time scoring and a timing system.",
     "achievement": null,
     "media": {
-      "cover": "",
+      "cover": "maze.png",
       "images": [],
       "video": "",
-      "video_url": ""
+      "video_url": "https://lnkd.in/p/dBFu2QHY"
     },
     "badge": "",
     "mood": "",
@@ -161,10 +181,31 @@
     "description": "A flappy bird-inspired game designed and built in C++ using object-oriented programming concepts, with power-ups, collectible coins and gems, and multiple game screens.",
     "achievement": null,
     "media": {
-      "cover": "",
+      "cover": "beakybounce.png",
       "images": [],
       "video": "",
-      "video_url": ""
+      "video_url": "https://lnkd.in/p/dxJ6k9Ps"
+    },
+    "badge": "",
+    "mood": "",
+    "links": []
+  },
+  {
+    "id": "pacman",
+    "title": "GoboMan",
+    "category": "game",
+    "dates": "Mar 2024 - May 2024",
+    "tools": [
+      "Scratch"
+    ],
+    "description": "My first game built on Scratch.",
+    "achievement": null,
+    "media": {
+      "cover": "pacman2.png",
+      "images": ["pacman.png", "pacman3.png", "pacman4.png", "pacman5.png"],
+      "video": "",
+      "video_url": "https://lnkd.in/p/dj3NNtwG",
+      "aspect": "1/1"
     },
     "badge": "",
     "mood": "",
@@ -181,7 +222,7 @@
     "description": "A short lipstick commercial made in Adobe After Effects for the After Effects course I took at CEGA. It was my first After Effects project.",
     "achievement": null,
     "media": {
-      "cover": "",
+      "cover": "lipstick_commercial_cover.png",
       "images": [],
       "video": "Lipstick Commercial.mp4",
       "video_url": ""
